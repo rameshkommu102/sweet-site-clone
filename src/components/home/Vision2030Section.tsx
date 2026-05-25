@@ -56,7 +56,7 @@ const Vision2030Section = () => {
         </ScrollReveal>
 
         <ScrollReveal animation="fadeUp" duration={0.8} delay={0.35}>
-          <p className="text-white/85 text-[14px] sm:text-sm md:text-base xl:text-[16px] 2xl:text-[18px] max-w-[560px] xl:max-w-[700px] leading-relaxed mb-8 sm:mb-10">
+          <p className="text-white/85 text-[14px] sm:text-sm md:text-base xl:text-[16px] 2xl:text-[18px] max-w-[560px] xl:max-w-[700px] leading-relaxed mb-0">
             Embrace AI, machine intelligence and predictive analytics for next-generation
             manufacturing. Our vision connects people, processes and machines into a unified
             intelligence layer.
