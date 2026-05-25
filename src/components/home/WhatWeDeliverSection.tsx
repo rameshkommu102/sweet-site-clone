@@ -119,7 +119,7 @@ const WhatWeDeliverSection = () => {
   };
 
   return (
-    <section className="py-10 sm:py-14 relative overflow-hidden" style={{ background: "#0A0A06" }}>
+    <section className="py-10 sm:py-14 relative overflow-hidden" style={{ background: "#010203" }}>
       <div className="max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] mx-auto px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20">
         <ScrollReveal animation="clipReveal" duration={1}>
           <div className="relative mb-10 sm:mb-14">
