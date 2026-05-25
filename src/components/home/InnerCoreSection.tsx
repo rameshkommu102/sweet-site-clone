@@ -162,6 +162,7 @@ const InnerCoreSection = () => {
             </div>
           </div>
         </div>
+      </div>
     </section>
   );
 };
