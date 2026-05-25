@@ -26,7 +26,7 @@ const Vision2030Section = () => {
         className="absolute inset-0 pointer-events-none"
         style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, #000000 100%)" }}
       />
-      <div className="relative z-10 mx-auto max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pt-16 sm:pt-20 md:pt-28 pb-8 sm:pb-10 md:pb-12 flex flex-col justify-center min-h-[500px]">
+      <div className="relative z-10 mx-auto max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-10 md:pb-12 flex flex-col justify-center min-h-[420px]">
         <ScrollReveal animation="fadeRight" duration={0.8}>
           <div className="mb-6 sm:mb-8">
             <div className="inline-block">
