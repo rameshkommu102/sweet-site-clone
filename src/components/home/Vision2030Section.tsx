@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ewm/ScrollReveal";
 
 const Vision2030Section = () => {
   return (
-    <section className="relative w-full overflow-hidden" style={{ minHeight: '500px' }}>
+    <section className="relative w-full overflow-hidden" style={{ minHeight: '420px' }}>
       <video
         src={visionVideo}
         poster={visionBg}
