@@ -51,7 +51,7 @@ const InnerCoreSection = () => {
   return (
     <section className="relative py-14 sm:py-20 overflow-hidden" style={{ background: "#000000" }}>
       <div className="relative z-10 max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] mx-auto px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-[40%_1fr] gap-8 lg:gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[35%_1fr] gap-8 lg:gap-10 items-center">
           {/* Left column */}
           <div>
             <ScrollReveal animation="fadeRight" duration={0.9}>
@@ -70,7 +70,7 @@ const InnerCoreSection = () => {
 
             <ScrollReveal animation="clipReveal" duration={1}>
               <h2
-                className="text-white text-[28px] sm:text-[34px] lg:text-[36px] xl:text-[42px] leading-[1.1] mb-5 sm:mb-6"
+                className="text-white text-[26px] sm:text-[30px] lg:text-[32px] xl:text-[38px] leading-[1.1] mb-5 sm:mb-6"
                 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
               >
                 Principles Behind Every Engagement & Decision
