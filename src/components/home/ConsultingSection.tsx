@@ -26,7 +26,7 @@ const ConsultingSection = () => {
         </div>
 
         <h2
-          className="text-white text-[40px] sm:text-[56px] md:text-[72px] lg:text-[84px] font-bold leading-[1.05] mb-10"
+          className="text-white text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] font-semibold leading-[1.05] mb-10"
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
           Built for Visionaries.
