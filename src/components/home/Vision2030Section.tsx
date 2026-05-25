@@ -49,7 +49,7 @@ const Vision2030Section = () => {
         <ScrollReveal animation="clipReveal" duration={1.1} delay={0.2}>
           <p
             className="text-[38px] sm:text-[56px] md:text-[68px] xl:text-[80px] 2xl:text-[100px] font-medium leading-[1.1] mb-6 sm:mb-8"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", color: "#30E8BA" }}
+            style={{ fontFamily: "'Space Grotesk', sans-serif", color: "#ffffff" }}
           >
             Vision 2030
           </p>
