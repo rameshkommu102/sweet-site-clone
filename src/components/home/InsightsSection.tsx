@@ -188,7 +188,7 @@ const InsightsSection = () => {
                         }}
                       >
                         <div
-                          className="text-[#30E8BA] text-[18px] sm:text-[20px] xl:text-[21px] 2xl:text-[25px] font-semibold mb-1"
+                          className="text-white text-[18px] sm:text-[20px] xl:text-[21px] 2xl:text-[25px] font-semibold mb-1"
                           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                         >
                           {stat.value}
