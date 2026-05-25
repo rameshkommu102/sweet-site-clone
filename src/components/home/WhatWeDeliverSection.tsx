@@ -229,17 +229,17 @@ const WhatWeDeliverSection = () => {
             <div
               key={card.number}
               data-card
-              className="snap-start shrink-0 w-[280px] sm:w-[300px] lg:w-[calc((100%-48px)/4)] relative overflow-hidden rounded-lg"
+              className="group snap-start shrink-0 w-[280px] sm:w-[300px] lg:w-[calc((100%-48px)/4)] relative overflow-hidden rounded-lg transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.7)]"
               style={{
                 background: "#0F0F0A",
-                border: "1px solid #1F1F18",
-                minHeight: 440,
+                border: "1px solid #191B1B",
+                minHeight: 360,
               }}
             >
               {/* Glow blob top-right */}
               <div
                 aria-hidden
-                className="absolute pointer-events-none"
+                className="absolute pointer-events-none transition-all duration-700 ease-out group-hover:scale-125"
                 style={{
                   top: "-40%",
                   right: "-30%",
@@ -248,13 +248,23 @@ const WhatWeDeliverSection = () => {
                   background: card.glow,
                   filter: "blur(80px)",
                   borderRadius: "50%",
+                  opacity: 0.75,
                 }}
               />
 
-              <div className="relative z-10 p-6 flex flex-col h-full" style={{ minHeight: 440 }}>
+              {/* Border glow on hover */}
+              <div
+                aria-hidden
+                className="absolute inset-0 rounded-lg pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{
+                  boxShadow: `inset 0 0 0 1px ${card.glow.replace("33", "66")}`,
+                }}
+              />
+
+              <div className="relative z-10 p-5 flex flex-col h-full" style={{ minHeight: 360 }}>
                 {/* Icon */}
                 <div
-                  className="w-10 h-10 rounded-md flex items-center justify-center mb-10"
+                  className="w-9 h-9 rounded-md flex items-center justify-center mb-6 transition-transform duration-500 group-hover:scale-110"
                   style={{ background: card.glow.replace("33", "55") }}
                 >
                   <img src={card.icon} alt="" className="w-5 h-5" loading="lazy" />
@@ -262,10 +272,10 @@ const WhatWeDeliverSection = () => {
 
                 {/* Big number */}
                 <div
-                  className="text-[72px] leading-none font-light mb-6"
+                  className="text-[56px] leading-none font-light mb-4 transition-colors duration-500 group-hover:text-white/25"
                   style={{
                     fontFamily: "'Space Grotesk', sans-serif",
-                    color: "rgba(255,255,255,0.15)",
+                    color: "rgba(255,255,255,0.12)",
                   }}
                 >
                   {card.number}
@@ -273,7 +283,7 @@ const WhatWeDeliverSection = () => {
 
                 {/* Title */}
                 <h3
-                  className="text-white text-[18px] font-semibold mb-3"
+                  className="text-white text-[15px] font-semibold mb-2 transition-colors duration-300"
                   style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                 >
                   {card.title}
@@ -281,7 +291,7 @@ const WhatWeDeliverSection = () => {
 
                 {/* Description */}
                 <p
-                  className="text-[13px] leading-relaxed mb-6"
+                  className="text-[12px] leading-relaxed mb-5"
                   style={{ color: "rgba(255,255,255,0.55)" }}
                 >
                   {card.desc}
@@ -289,9 +299,9 @@ const WhatWeDeliverSection = () => {
 
                 {/* Footer */}
                 <div
-                  className="mt-auto pt-4 text-[12px] font-medium"
+                  className="mt-auto pt-3 text-[11px] font-medium"
                   style={{
-                    color: "rgba(255,255,255,0.7)",
+                    color: "rgba(255,255,255,0.75)",
                     borderTop: "1px solid rgba(255,255,255,0.06)",
                   }}
                 >
