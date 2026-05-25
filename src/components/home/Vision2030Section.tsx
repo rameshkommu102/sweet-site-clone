@@ -63,15 +63,6 @@ const Vision2030Section = () => {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal animation="fadeUp" duration={0.7} delay={0.5}>
-          <div>
-            <a href="#team" className="inline-flex items-center gap-2 text-white text-[13px] sm:text-sm font-semibold group">
-              Explore Our Team
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </a>
-            <div className="w-[140px] h-px bg-white/30 mt-2" />
-          </div>
-        </ScrollReveal>
         </div>
       </div>
     </section>
