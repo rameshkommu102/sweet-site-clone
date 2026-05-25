@@ -17,7 +17,7 @@ const ConsultingSection = () => {
         <div className="flex items-center justify-center gap-4 mb-8">
           <span className="block h-[2px] w-8" style={{ backgroundColor: '#30E8BA' }} />
           <span
-            className="text-[14px] sm:text-[15px] tracking-wide"
+            className="text-[16px] sm:text-[17px] tracking-wide"
             style={{ color: '#30E8BA', fontFamily: "'Space Grotesk', sans-serif" }}
           >
             Who we are
