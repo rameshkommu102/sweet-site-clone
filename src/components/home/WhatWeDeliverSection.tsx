@@ -43,7 +43,7 @@ const WhatWeDeliverSection = () => {
               style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 400, color: '#ffffff' }}
             >
               We Help You{" "}
-              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 400, color: '#30E8BA' }}>
+              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 400, color: '#ffffff' }}>
                 See Further.
               </span>
             </h2>

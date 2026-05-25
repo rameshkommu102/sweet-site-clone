@@ -36,7 +36,7 @@ const GlobalReachSection = () => {
         </ScrollReveal>
         <ScrollReveal animation="clipReveal" duration={1}>
           <div className="text-center mb-10 sm:mb-14">
-            <h2 className="text-[26px] sm:text-[26px] md:text-[32px] lg:text-[40px] xl:text-[43px] 2xl:text-[51px] mb-3 text-white leading-[1.1]" style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 400 }}>Where We <span style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#30E8BA' }}>Operate</span></h2>
+            <h2 className="text-[26px] sm:text-[26px] md:text-[32px] lg:text-[40px] xl:text-[43px] 2xl:text-[51px] mb-3 text-white leading-[1.1]" style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 400 }}>Where We <span style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#ffffff' }}>Operate</span></h2>
             <p className="text-white text-[14px] sm:text-[13px] xl:text-[14px] 2xl:text-[16px] max-w-[560px] xl:max-w-[680px] mx-auto leading-relaxed">
               Headquartered in India and the USA, Carbynetech supports manufacturing enterprises across South Asia, the Middle East, and global industrial markets.
             </p>

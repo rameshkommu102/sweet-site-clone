@@ -157,7 +157,7 @@ const InsightsSection = () => {
                     {s.title}
                   </h2>
                   <h2
-                    className="text-[#30E8BA] text-[22px] sm:text-[32px] md:text-[42px] xl:text-[47px] 2xl:text-[52px] font-normal leading-[1.05] mb-5 sm:mb-6 not-italic"
+                    className="text-white text-[22px] sm:text-[32px] md:text-[42px] xl:text-[47px] 2xl:text-[52px] font-normal leading-[1.05] mb-5 sm:mb-6 not-italic"
                     style={{
                       fontFamily: "'Space Grotesk', sans-serif",
                       fontStyle: "normal",

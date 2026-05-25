@@ -4,7 +4,7 @@ import ScrollReveal from "@/components/ewm/ScrollReveal";
 
 const Vision2030Section = () => {
   return (
-    <section className="relative w-full overflow-hidden" style={{ minHeight: '500px' }}>
+    <section className="relative w-full overflow-hidden" style={{ minHeight: '420px' }}>
       <video
         src={visionVideo}
         poster={visionBg}
@@ -26,7 +26,7 @@ const Vision2030Section = () => {
         className="absolute inset-0 pointer-events-none"
         style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 55%, #000000 100%)" }}
       />
-      <div className="relative z-10 mx-auto max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 py-16 sm:py-20 md:py-28 flex flex-col justify-center min-h-[500px]">
+      <div className="relative z-10 mx-auto max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-10 md:pb-12 flex flex-col justify-center min-h-[420px]">
         <ScrollReveal animation="fadeRight" duration={0.8}>
           <div className="mb-6 sm:mb-8">
             <div className="inline-block">
@@ -49,14 +49,14 @@ const Vision2030Section = () => {
         <ScrollReveal animation="clipReveal" duration={1.1} delay={0.2}>
           <p
             className="text-[38px] sm:text-[56px] md:text-[68px] xl:text-[80px] 2xl:text-[100px] font-medium leading-[1.1] mb-6 sm:mb-8"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", color: "#30E8BA" }}
+            style={{ fontFamily: "'Space Grotesk', sans-serif", color: "#ffffff" }}
           >
             Vision 2030
           </p>
         </ScrollReveal>
 
         <ScrollReveal animation="fadeUp" duration={0.8} delay={0.35}>
-          <p className="text-white/85 text-[14px] sm:text-sm md:text-base xl:text-[16px] 2xl:text-[18px] max-w-[560px] xl:max-w-[700px] leading-relaxed mb-8 sm:mb-10">
+          <p className="text-white/85 text-[14px] sm:text-sm md:text-base xl:text-[16px] 2xl:text-[18px] max-w-[560px] xl:max-w-[700px] leading-relaxed mb-0">
             Embrace AI, machine intelligence and predictive analytics for next-generation
             manufacturing. Our vision connects people, processes and machines into a unified
             intelligence layer.
