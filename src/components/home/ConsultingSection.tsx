@@ -9,15 +9,15 @@ const ConsultingSection = () => {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute w-full h-full object-cover top-[-3rem] sm:top-[-4rem] md:top-[-5rem]"
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute w-full h-full top-[-3rem] sm:top-[-4rem] md:top-[-5rem] bg-black/40" />
 
       <div className="relative z-10 mx-auto w-full max-w-[1200px] xl:max-w-[1440px] px-5 sm:px-8 md:px-14 lg:px-20 py-24 sm:py-32 md:py-40 text-center">
         <div className="flex items-center justify-center gap-4 mb-8">
           <span className="block h-[2px] w-8" style={{ backgroundColor: '#30E8BA' }} />
           <span
-            className="text-[14px] sm:text-[15px] tracking-wide"
+            className="text-[16px] sm:text-[17px] tracking-wide"
             style={{ color: '#30E8BA', fontFamily: "'Space Grotesk', sans-serif" }}
           >
             Who we are
@@ -26,7 +26,7 @@ const ConsultingSection = () => {
         </div>
 
         <h2
-          className="text-white text-[40px] sm:text-[56px] md:text-[72px] lg:text-[84px] font-bold leading-[1.05] mb-10"
+          className="text-white text-[36px] sm:text-[48px] md:text-[64px] lg:text-[72px] font-semibold leading-[1.05] mb-10"
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
           Built for Visionaries.
