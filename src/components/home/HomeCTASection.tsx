@@ -29,15 +29,7 @@ const HomeCTASection = () => {
 
             <ScrollReveal animation="clipReveal" duration={1} delay={0.1}>
               <h2
-                className="mb-5 font-heading text-[26px] font-semibold leading-[1.15] sm:text-[40px] lg:text-[52px]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #4D4D4D 0%, #FFFFFF 50.48%, #4D4D4D 100%)",
-                  WebkitBackgroundClip: "text",
-                  backgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  color: "transparent",
-                }}
+                className="mb-5 font-heading text-[26px] font-semibold leading-[1.15] sm:text-[40px] lg:text-[52px] text-white"
               >
                 Building the Future
                 <br />
