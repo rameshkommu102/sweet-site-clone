@@ -15,14 +15,14 @@ const ConsultingSection = () => {
 
       <div className="relative z-10 mx-auto w-full max-w-[1200px] xl:max-w-[1440px] px-5 sm:px-8 md:px-14 lg:px-20 py-24 sm:py-32 md:py-40 text-center">
         <div className="flex items-center justify-center gap-4 mb-8">
-          <span className="block h-[2px] w-8" style={{ backgroundColor: '#30E8BA' }} />
+          <span className="block h-[2px] w-8 bg-white" />
           <span
-            className="text-[16px] sm:text-[17px] tracking-wide"
-            style={{ color: '#30E8BA', fontFamily: "'Space Grotesk', sans-serif" }}
+            className="text-[15px] sm:text-[17px] tracking-wide text-white font-normal"
+            style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
             Who we are
           </span>
-          <span className="block h-[2px] w-8" style={{ backgroundColor: '#30E8BA' }} />
+          <span className="block h-[2px] w-8 bg-white" />
         </div>
 
         <h2
