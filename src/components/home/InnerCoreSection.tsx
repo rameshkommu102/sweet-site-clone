@@ -7,12 +7,13 @@ import oic3 from "@/assets/oic-3.png";
 import oic4 from "@/assets/oic-4.png";
 import oic5 from "@/assets/oic-5.png";
 
-const items = [
-  { img: oic1, title: "Customer Impact", desc: "Every Solution Starts And Ends With Measurable Client Success." },
-  { img: oic2, title: "Engineering Excellence", desc: "Robust, Scalable Systems Built On Best-In-Class Practices." },
-  { img: oic3, title: "Industrial Expertise", desc: "Deep Domain Knowledge Across Manufacturing Verticals." },
-  { img: oic4, title: "Practical Innovation", desc: "AI That Solves Real Problems, Not Just Proof-Of-Concepts." },
-  { img: oic5, title: "Collaborative Partnership", desc: "Long-Term Relationships Built On Trust And Shared Goals." },
+type Size = "tall" | "short";
+const items: { img: string; title: string; desc: string; size: Size }[] = [
+  { img: oic1, title: "Customer Impact", desc: "Every Solution Starts And Ends With Measurable Client Success.", size: "tall" },
+  { img: oic2, title: "Engineering Excellence", desc: "Robust, Scalable Systems Built On Best-In-Class Practices.", size: "short" },
+  { img: oic3, title: "Industrial Expertise", desc: "Deep Domain Knowledge Across Manufacturing Verticals.", size: "tall" },
+  { img: oic4, title: "Practical Innovation", desc: "AI That Solves Real Problems, Not Just Proof-Of-Concepts.", size: "short" },
+  { img: oic5, title: "Collaborative Partnership", desc: "Long-Term Relationships Built On Trust And Shared Goals.", size: "tall" },
 ];
 
 const InnerCoreSection = () => {
