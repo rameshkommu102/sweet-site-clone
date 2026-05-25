@@ -9,9 +9,9 @@ const ConsultingSection = () => {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute w-full h-full object-cover top-[-3rem] sm:top-[-4rem] md:top-[-5rem]"
       />
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute w-full h-full top-[-3rem] sm:top-[-4rem] md:top-[-5rem] bg-black/40" />
 
       <div className="relative z-10 mx-auto w-full max-w-[1200px] xl:max-w-[1440px] px-5 sm:px-8 md:px-14 lg:px-20 py-24 sm:py-32 md:py-40 text-center">
         <div className="flex items-center justify-center gap-4 mb-8">
