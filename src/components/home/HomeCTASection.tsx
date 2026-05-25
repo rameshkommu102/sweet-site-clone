@@ -4,15 +4,16 @@ import ctaBg from "@/assets/cta-bg.png";
 const HomeCTASection = () => {
   return (
     <section
-      className="relative overflow-hidden py-12 sm:py-16 lg:py-20"
+      className="relative overflow-hidden py-10 sm:py-14 lg:py-16"
       style={{ backgroundColor: "#000000" }}
     >
-      <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6">
+      <div className="relative mx-auto w-full max-w-[1100px] px-6 sm:px-10 lg:px-16">
         <div
-          className="relative overflow-hidden rounded-[24px] sm:rounded-[32px] px-5 py-16 sm:px-10 sm:py-20 lg:py-24"
+          className="relative mx-auto overflow-hidden rounded-[20px] sm:rounded-[28px] px-5 py-10 sm:px-8 sm:py-12 lg:py-14"
           style={{
             backgroundImage: `url(${ctaBg})`,
-            backgroundSize: "cover",
+            backgroundSize: "100% 100%",
+            backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
         >
