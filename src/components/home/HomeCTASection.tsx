@@ -47,7 +47,7 @@ const HomeCTASection = () => {
 
             <ScrollReveal animation="fadeUp" duration={0.7} delay={0.25}>
               <p
-                className="mx-auto mb-10 max-w-[640px] text-[14px] leading-relaxed sm:text-[15px]"
+                className="mx-auto mb-7 max-w-[560px] text-[13px] leading-relaxed sm:text-[14px]"
                 style={{ color: "#BDBDBD" }}
               >
                 The next decade will fundamentally shift how manufacturing operates, and AI analytics and
