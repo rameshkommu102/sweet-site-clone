@@ -4,15 +4,16 @@ import ctaBg from "@/assets/cta-bg.png";
 const HomeCTASection = () => {
   return (
     <section
-      className="relative overflow-hidden py-12 sm:py-16 lg:py-20"
+      className="relative overflow-hidden py-10 sm:py-14 lg:py-16"
       style={{ backgroundColor: "#000000" }}
     >
-      <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6">
+      <div className="relative mx-auto w-full max-w-[1100px] px-6 sm:px-10 lg:px-16">
         <div
-          className="relative overflow-hidden rounded-[24px] sm:rounded-[32px] px-5 py-16 sm:px-10 sm:py-20 lg:py-24"
+          className="relative mx-auto overflow-hidden rounded-[20px] sm:rounded-[28px] px-5 py-10 sm:px-8 sm:py-12 lg:py-14"
           style={{
             backgroundImage: `url(${ctaBg})`,
-            backgroundSize: "cover",
+            backgroundSize: "100% 100%",
+            backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
           }}
         >
@@ -28,7 +29,7 @@ const HomeCTASection = () => {
 
             <ScrollReveal animation="clipReveal" duration={1} delay={0.1}>
               <h2
-                className="mb-6 font-heading text-[32px] font-semibold leading-[1.1] sm:text-[52px] lg:text-[64px]"
+                className="mb-5 font-heading text-[26px] font-semibold leading-[1.15] sm:text-[40px] lg:text-[52px]"
                 style={{
                   backgroundImage:
                     "linear-gradient(90deg, #4D4D4D 0%, #FFFFFF 50.48%, #4D4D4D 100%)",
@@ -46,7 +47,7 @@ const HomeCTASection = () => {
 
             <ScrollReveal animation="fadeUp" duration={0.7} delay={0.25}>
               <p
-                className="mx-auto mb-10 max-w-[640px] text-[14px] leading-relaxed sm:text-[15px]"
+                className="mx-auto mb-7 max-w-[560px] text-[13px] leading-relaxed sm:text-[14px]"
                 style={{ color: "#BDBDBD" }}
               >
                 The next decade will fundamentally shift how manufacturing operates, and AI analytics and
