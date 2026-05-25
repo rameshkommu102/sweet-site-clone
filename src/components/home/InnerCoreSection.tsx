@@ -7,12 +7,13 @@ import oic3 from "@/assets/oic-3.png";
 import oic4 from "@/assets/oic-4.png";
 import oic5 from "@/assets/oic-5.png";
 
-const items = [
-  { img: oic1, title: "Customer Impact", desc: "Every Solution Starts And Ends With Measurable Client Success." },
-  { img: oic2, title: "Engineering Excellence", desc: "Robust, Scalable Systems Built On Best-In-Class Practices." },
-  { img: oic3, title: "Industrial Expertise", desc: "Deep Domain Knowledge Across Manufacturing Verticals." },
-  { img: oic4, title: "Practical Innovation", desc: "AI That Solves Real Problems, Not Just Proof-Of-Concepts." },
-  { img: oic5, title: "Collaborative Partnership", desc: "Long-Term Relationships Built On Trust And Shared Goals." },
+type Size = "tall" | "short";
+const items: { img: string; title: string; desc: string; size: Size }[] = [
+  { img: oic1, title: "Customer Impact", desc: "Every Solution Starts And Ends With Measurable Client Success.", size: "tall" },
+  { img: oic2, title: "Engineering Excellence", desc: "Robust, Scalable Systems Built On Best-In-Class Practices.", size: "short" },
+  { img: oic3, title: "Industrial Expertise", desc: "Deep Domain Knowledge Across Manufacturing Verticals.", size: "tall" },
+  { img: oic4, title: "Practical Innovation", desc: "AI That Solves Real Problems, Not Just Proof-Of-Concepts.", size: "short" },
+  { img: oic5, title: "Collaborative Partnership", desc: "Long-Term Relationships Built On Trust And Shared Goals.", size: "tall" },
 ];
 
 const InnerCoreSection = () => {
@@ -50,11 +51,11 @@ const InnerCoreSection = () => {
   return (
     <section className="relative py-14 sm:py-20 overflow-hidden" style={{ background: "#000000" }}>
       <div className="relative z-10 max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] mx-auto px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,460px)_1fr] gap-10 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[22%_1fr] xl:grid-cols-[20%_1fr] gap-8 lg:gap-10 items-start">
           {/* Left column */}
           <div>
             <ScrollReveal animation="fadeRight" duration={0.9}>
-              <div className="mb-8 sm:mb-10">
+              <div className="mb-6 sm:mb-8">
                 <div className="inline-block">
                   <p
                     className="text-white text-[15px] sm:text-[17px] xl:text-[17px] 2xl:text-[19px] font-normal tracking-wide mb-1"
@@ -69,13 +70,13 @@ const InnerCoreSection = () => {
 
             <ScrollReveal animation="clipReveal" duration={1}>
               <h2
-                className="text-white text-[34px] sm:text-[44px] lg:text-[52px] xl:text-[58px] leading-[1.08] mb-6 sm:mb-8"
+                className="text-white text-[28px] sm:text-[34px] lg:text-[36px] xl:text-[42px] leading-[1.1] mb-5 sm:mb-6"
                 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 500 }}
               >
                 Principles Behind Every Engagement & Decision
               </h2>
               <p
-                className="text-[14px] sm:text-[15px] xl:text-[16px] leading-relaxed max-w-[420px]"
+                className="text-[13px] sm:text-[14px] xl:text-[15px] leading-relaxed"
                 style={{ color: "#C8C8C8" }}
               >
                 Built on trust, powered by innovation, and focused on measurable business outcomes.
@@ -84,14 +85,14 @@ const InnerCoreSection = () => {
           </div>
 
           {/* Right column - carousel */}
-          <div className="relative">
-            {/* Arrows */}
-            <div className="flex justify-end gap-2 mb-5 sm:mb-6 lg:absolute lg:-top-2 lg:right-0 lg:mb-0 lg:z-20">
+          <div className="relative min-w-0">
+            {/* Arrows top-right */}
+            <div className="flex justify-end gap-2 mb-4">
               <button
                 aria-label="Previous"
                 onClick={() => scrollBy(-1)}
                 disabled={!canPrev}
-                className="w-10 h-10 flex items-center justify-center rounded-md transition-colors"
+                className="w-9 h-9 flex items-center justify-center rounded-md transition-colors"
                 style={{
                   background: "#1A1A1A",
                   border: "1px solid #2A2A2A",
@@ -99,13 +100,13 @@ const InnerCoreSection = () => {
                   cursor: canPrev ? "pointer" : "not-allowed",
                 }}
               >
-                <ChevronLeft size={18} />
+                <ChevronLeft size={16} />
               </button>
               <button
                 aria-label="Next"
                 onClick={() => scrollBy(1)}
                 disabled={!canNext}
-                className="w-10 h-10 flex items-center justify-center rounded-md transition-colors"
+                className="w-9 h-9 flex items-center justify-center rounded-md transition-colors"
                 style={{
                   background: "#1A1A1A",
                   border: "1px solid #2A2A2A",
@@ -113,46 +114,51 @@ const InnerCoreSection = () => {
                   cursor: canNext ? "pointer" : "not-allowed",
                 }}
               >
-                <ChevronRight size={18} />
+                <ChevronRight size={16} />
               </button>
             </div>
 
             <div
               ref={scrollRef}
-              className="flex gap-5 sm:gap-6 overflow-x-auto pb-2 snap-x snap-mandatory scroll-smooth"
+              className="flex gap-5 sm:gap-6 overflow-x-auto pb-2 snap-x scroll-smooth items-start"
               style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              <style>{`
-                .oic-scroll::-webkit-scrollbar { display: none; }
-              `}</style>
-              {items.map((item) => (
-                <div
-                  key={item.title}
-                  data-card
-                  className="snap-start shrink-0 w-[230px] sm:w-[260px] lg:w-[270px]"
-                >
+              <style>{`div::-webkit-scrollbar { display: none; }`}</style>
+              {items.map((item, i) => {
+                const isTall = item.size === "tall";
+                return (
                   <div
-                    className="w-full aspect-[4/5] rounded-2xl overflow-hidden mb-4"
-                    style={{ background: "#0E0E0E" }}
+                    key={item.title}
+                    data-card
+                    className="snap-start shrink-0 w-[210px] sm:w-[230px] lg:w-[240px]"
+                    style={{ marginTop: isTall ? 0 : 64 }}
                   >
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
+                    <div
+                      className="w-full rounded-2xl overflow-hidden mb-3"
+                      style={{
+                        background: "#0E0E0E",
+                        height: isTall ? 320 : 240,
+                      }}
+                    >
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h4
+                      className="text-white font-semibold text-[17px] sm:text-[18px] mb-1.5"
+                      style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                    >
+                      {item.title}
+                    </h4>
+                    <p className="text-[13px] leading-relaxed" style={{ color: "#9A9A9A" }}>
+                      {item.desc}
+                    </p>
                   </div>
-                  <h4
-                    className="text-white font-semibold text-[18px] sm:text-[19px] mb-2"
-                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-                  >
-                    {item.title}
-                  </h4>
-                  <p className="text-[13px] sm:text-[14px] leading-relaxed" style={{ color: "#9A9A9A" }}>
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
