@@ -36,7 +36,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-end overflow-hidden">
       <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ transformOrigin: '45% 60%', transform: 'scale(0.95)' }} />
-      <div className="relative z-10 mx-auto w-full max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pb-16 sm:pb-24 pt-28 sm:pt-32">
+      <div className="relative z-10 mx-auto w-full max-w-[1200px] xl:max-w-[1440px] 2xl:max-w-[1720px] [@media(min-width:1920px)]:max-w-[1840px] px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pb-16 sm:pb-24 pt-28 sm:pt-32" style={{ margin: '10rem'}}>
         <motion.div
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
           className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 sm:mb-8"
