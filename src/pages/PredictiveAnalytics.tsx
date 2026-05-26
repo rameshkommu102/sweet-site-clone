@@ -185,7 +185,7 @@ const PredictiveAnalytics = () => {
           />
         </div>
 
-        <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-1 flex-col justify-center px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pt-24 sm:pt-32 pb-10 sm:pb-16">
+        <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-1 flex-col justify-center px-5 sm:px-8 md:px-14 lg:px-20 xl:px-32 2xl:px-20 pt-24 sm:pt-32 pb-10 sm:pb-16" style={{ margin: "5vw" }}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
